@@ -1,0 +1,73 @@
+{
+  "id": "1b286ed4-d105-443a-b278-ffa79f975b62",
+  "version": "2.0",
+  "name": "Pesquisa do Google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "c083372c-3409-4971-b311-1acd09beec5b",
+    "name": "Pesquisa do Google",
+    "commands": [{
+      "id": "76cbc7b4-0e9e-4ac5-89c0-b438595f3a23",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d60d7c03-0d1c-4668-90ec-a5d9e98699de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d25b992-675f-4649-9aa6-099fcb30e90b",
+      "comment": "",
+      "command": "click",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e901003f-5db7-4f28-85af-fba794284df4",
+      "comment": "",
+      "command": "type",
+      "target": "id=APjFqb",
+      "targets": [
+        ["id=APjFqb", "id"],
+        ["name=q", "name"],
+        ["css=#APjFqb", "css:finder"],
+        ["xpath=//textarea[@id='APjFqb']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "ET"
+    }, {
+      "id": "eca0449a-fc19-4374-9c9b-d1295730824e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#jZ2SBf > .ClJ9Yb > span",
+      "targets": [
+        ["css=#jZ2SBf > .ClJ9Yb > span", "css:finder"],
+        ["xpath=//div[@id='jZ2SBf']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Escola Técnica Estadual Professor Camargo Aranha · R. Marcial, 25 - Mooca, São Paulo - SP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3c75d636-1ed2-485f-b3ef-9ef0fe7e2b7a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c083372c-3409-4971-b311-1acd09beec5b"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

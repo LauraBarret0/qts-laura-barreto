@@ -1,0 +1,1038 @@
+{
+  "id": "01f5f5b8-c3ad-4f02-902f-7717b72ae889",
+  "version": "2.0",
+  "name": "Login TCC",
+  "url": "http://127.0.0.1:5500/mateka/mateka/index.html",
+  "tests": [{
+    "id": "986aab3c-6643-4d6b-bfd9-9b2835e5fcc4",
+    "name": "Cadastro Correto",
+    "commands": [{
+      "id": "434ef535-5cc5-43de-ab93-5c85ea273b33",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da63e33d-8b22-4da9-b8b4-17bf4916e223",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "159f4b39-820d-479a-8e55-3c3cca8f10e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__cadastro:nth-child(2) > a",
+      "targets": [
+        ["css=.botao__cadastro:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './pages/cadastro.html')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3182c4a0-bbc6-40bf-b16b-8d04989545fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b81144b8-7ad9-4844-b110-ae91507e11c2",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorenzo"
+    }, {
+      "id": "6fda6576-11df-4586-868a-55c4b93f8543",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "478.602.748-09"
+    }, {
+      "id": "6dc694a0-fd0a-49d8-af1d-7db3cb59cdab",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lorenzobrunellioropallo@gmail.com"
+    }, {
+      "id": "0dfdc89e-d67e-466c-8884-bddf2c9a37f3",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "b908b63e-bf72-4f44-9e45-44a81f2c186e",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "f3e5aff4-3894-4924-82d2-75a0714d20c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=termos",
+      "targets": [
+        ["id=termos", "id"],
+        ["css=#termos", "css:finder"],
+        ["xpath=//input[@id='termos']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9d1034-6ce3-4fc5-b603-25e0aaf5f852",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__cadastro",
+      "targets": [
+        ["css=.container__cadastro", "css:finder"],
+        ["xpath=//div[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4dc562c-306f-4faa-bb1c-6568dff597f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__cadastro > input",
+      "targets": [
+        ["css=.container__cadastro > input", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a32a52b-5edb-4bcc-bfb1-32de0beb01ba",
+    "name": "Cadastro Errado/semEmail",
+    "commands": [{
+      "id": "efefafc9-5d7f-43f2-873d-3ff38d505d54",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0718107d-c84e-469c-ab01-9024fd86892c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2a610960-3f9d-4282-99d3-c91a9b4b2d5c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__cadastro:nth-child(2) > a",
+      "targets": [
+        ["css=.botao__cadastro:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './pages/cadastro.html')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95931af7-6b8a-4add-b8e0-f827e3672e0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0aed41c-0acf-44dd-ae90-6f719e6f9346",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorenzo"
+    }, {
+      "id": "3c336b96-a6db-4b31-8513-2f633f48b47f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fbee6c4-330d-41dd-b84d-528a169ed604",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "478.602.748-09"
+    }, {
+      "id": "c5ab6fd1-da6b-4de4-bcfd-1a653beec1a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "868cd118-6947-4290-858d-5dfbd3ac1034",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f62448e-6dbb-4368-b21e-50e2167e3fd3",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "lori123@"
+    }, {
+      "id": "5b3578b1-a52d-4b03-8e54-2353c699459a",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "086b763e-0a42-4375-b377-c84ad521448d",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "8097b696-86ea-4d97-b34c-ac5f4dd5cd86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__termos",
+      "targets": [
+        ["css=.container__termos", "css:finder"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "066e2107-cfa4-4202-a675-33f034521916",
+      "comment": "",
+      "command": "click",
+      "target": "id=termos",
+      "targets": [
+        ["id=termos", "id"],
+        ["css=#termos", "css:finder"],
+        ["xpath=//input[@id='termos']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a96daad-15cf-49bc-90b2-067d95ddd3ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__cadastro > input",
+      "targets": [
+        ["css=.container__cadastro > input", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "824a835f-613c-43c8-9cc3-dc659f3af21c",
+    "name": "Cadastro Errado/semSenha",
+    "commands": [{
+      "id": "bfa33aab-db79-4fd5-8232-370f126486ff",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ad29d59-09c3-4755-801c-349a79962f83",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e0d42ca-2194-49d8-82a1-002ae0aa308a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__cadastro:nth-child(2) > a",
+      "targets": [
+        ["css=.botao__cadastro:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './pages/cadastro.html')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b819d7d-0baa-41de-a477-7b9872d2b255",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f955605c-270a-4aa3-9e17-db6d61d40e32",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3905098a-4e78-421b-89c2-a645b663b743",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorenzo"
+    }, {
+      "id": "9ee234d2-2ddb-40be-a223-44c1e70094ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorenzo brunelli oropallo"
+    }, {
+      "id": "194694b1-0fe7-49b6-9704-835b558d1ada",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5120e357-e8e2-4c74-a518-d857da42ca03",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "478.602.748-09"
+    }, {
+      "id": "b8726761-3c20-4fd3-84bb-d3071efdafc6",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6934edd5-7078-4654-8c96-8134467ba287",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lorenzobrunellioropallo@gmail.com"
+    }, {
+      "id": "cd1d54c4-9de6-4864-9c51-51678434722b",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81991d12-2581-4e19-b952-e189c5953f1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "9cded629-fbef-4c69-9770-b08a4217c2d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__termos",
+      "targets": [
+        ["css=.container__termos", "css:finder"],
+        ["xpath=//div[6]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b86e3449-11b4-44b3-8271-a66a053292b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=termos",
+      "targets": [
+        ["id=termos", "id"],
+        ["css=#termos", "css:finder"],
+        ["xpath=//input[@id='termos']", "xpath:attributes"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48bd4799-b50f-44fd-9510-871a845e596a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__cadastro > input",
+      "targets": [
+        ["css=.container__cadastro > input", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bc7a81a3-06ec-4f4d-a614-88d6c2a64a03",
+    "name": "Cadastro Errado/semTermosdeUso",
+    "commands": [{
+      "id": "5a078958-76ac-474c-82cd-4e992aa4a624",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d621000-0bdf-4bb1-a974-1aa857dbcce7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4d4f9c8-da95-444f-8dcf-e840dcfb51e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__cadastro:nth-child(2) > a",
+      "targets": [
+        ["css=.botao__cadastro:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastro')]", "xpath:link"],
+        ["xpath=//a[contains(@href, './pages/cadastro.html')]", "xpath:href"],
+        ["xpath=//button[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8ddc6ea-bc95-4bf0-9ada-2580e2b449a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a41e957-fe7a-42e3-8217-2ebcc64aed9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Lorenzo"
+    }, {
+      "id": "89364a21-7d74-4e65-8a58-14ba83c843d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d19d2d-4ef3-4076-b1e5-77e4ac6e13fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "478.602.748-09"
+    }, {
+      "id": "244e85e5-1782-48fa-b823-3b0e1e8c5512",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e78ca6ce-7b9a-4bed-be14-4b6028d4c7e9",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "lorenzobrunellioropallo@gmail.com"
+    }, {
+      "id": "d15797c2-4d99-4015-9c9b-c3322eea97a6",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "4918fa7c-da84-48b5-8932-225673613cfc",
+      "comment": "",
+      "command": "type",
+      "target": "id=confirmarsenha",
+      "targets": [
+        ["id=confirmarsenha", "id"],
+        ["name=confirmarsenha", "name"],
+        ["css=#confirmarsenha", "css:finder"],
+        ["xpath=//input[@id='confirmarsenha']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "Lori123@"
+    }, {
+      "id": "be56b301-4749-45ac-9c1d-34661934b4f6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container__cadastro > input",
+      "targets": [
+        ["css=.container__cadastro > input", "css:finder"],
+        ["xpath=//input[@value='Cadastrar']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7538500a-6a0f-4eb1-865d-ab39adf30b3b",
+    "name": "Login Criança Errado/semSenha",
+    "commands": [{
+      "id": "f5603b24-6395-4228-a8a3-9683bd786d9d",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed8bd435-6acd-4cda-ba7d-044d4138d0f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc2bbdd3-eda1-4089-b6d2-4b3e541d1489",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__login",
+      "targets": [
+        ["css=.botao__login", "css:finder"],
+        ["xpath=//button[@onclick='abrirForm()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b9cf6eb-def0-4f2b-a4e4-6614a0ab9eaa",
+      "comment": "",
+      "command": "click",
+      "target": "id=apelido",
+      "targets": [
+        ["id=apelido", "id"],
+        ["name=apelido", "name"],
+        ["css=#apelido", "css:finder"],
+        ["xpath=//input[@id='apelido']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "744bf596-6316-40f7-80db-5e27ac722a60",
+      "comment": "",
+      "command": "type",
+      "target": "id=apelido",
+      "targets": [
+        ["id=apelido", "id"],
+        ["name=apelido", "name"],
+        ["css=#apelido", "css:finder"],
+        ["xpath=//input[@id='apelido']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Lorenzo"
+    }, {
+      "id": "8aea45d0-0b07-47c5-8356-115e2b0da999",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=.card-front #senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad04433d-6d0e-40bf-87ae-ebad0ce5aca1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-front .form__btn",
+      "targets": [
+        ["css=.card-front .form__btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "03a5ad66-f2d5-44d4-8351-011427443576",
+    "name": "Login Criança Errado/semEmail",
+    "commands": [{
+      "id": "3a0fad61-ae98-4b97-817e-a7c1911e94d5",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be551840-5e4b-4d00-a4ff-daa20db9f500",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a322009-389a-44be-afc4-ab32dfb2ba4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__login",
+      "targets": [
+        ["css=.botao__login", "css:finder"],
+        ["xpath=//button[@onclick='abrirForm()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aca91c11-b83e-4f1a-a511-3d45c07f542e",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=.card-front #senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6e5c31da-c8b9-4fae-a7ea-19e17d7e4dd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=.card-front #senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "LorenzoLindao"
+    }, {
+      "id": "1e447470-73e3-43f6-8323-1b52c90400da",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-front .form__btn",
+      "targets": [
+        ["css=.card-front .form__btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e1b43488-128b-4d8c-bfa5-51f9fba6fca0",
+    "name": "Login Responsavel Errado/Senha",
+    "commands": [{
+      "id": "5637f13c-d303-4331-a467-43e065d4aad9",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04c95bac-0b05-4ccd-ab3b-7b5e6179e37a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6ab31b4-5d02-404c-8f83-31b9af0d8ef9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__login",
+      "targets": [
+        ["css=.botao__login", "css:finder"],
+        ["xpath=//button[@onclick='abrirForm()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ab0c3a7-a298-4e22-873d-6f0413bb205d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-front > .botao__flip",
+      "targets": [
+        ["css=.card-front > .botao__flip", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Responsavel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0f11ce-264d-4264-a0bf-6a71c9422c55",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5181f12-cb02-4bf0-ac12-2b52bff7b240",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "leonardooropallo@gmail.com"
+    }, {
+      "id": "1e684c7d-3712-418c-a1d2-afa945a7e6d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-back .form__btn",
+      "targets": [
+        ["css=.card-back .form__btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b97c5b41-3116-489f-be1c-245d06d6cb6b",
+    "name": "Login Responsavel Errado/Email",
+    "commands": [{
+      "id": "bc2abdd8-a295-4d83-958f-41fbcdbc3524",
+      "comment": "",
+      "command": "open",
+      "target": "http://127.0.0.1:5500/mateka/mateka/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7cc4d74e-fac8-46b6-8420-2bd0268bdbd8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1012",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58e92a2e-875c-407a-a1da-0dfa3c6c90d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.botao__login",
+      "targets": [
+        ["css=.botao__login", "css:finder"],
+        ["xpath=//button[@onclick='abrirForm()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daf1979a-b8ba-4268-bb6a-af1268740bac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-front > .botao__flip",
+      "targets": [
+        ["css=.card-front > .botao__flip", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Responsavel')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2cb2f2c-a9e1-4452-9510-0a563f8d8215",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-back .campo__login-kids:nth-child(2)",
+      "targets": [
+        ["css=.card-back .campo__login-kids:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='card']/div[2]/form/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99e317d6-9ae7-4933-90b9-7468e45bb0cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-back #senha",
+      "targets": [
+        ["css=.card-back #senha", "css:finder"],
+        ["xpath=(//input[@id='senha'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff439b39-88f3-4c80-9b2f-87e83cdf2b42",
+      "comment": "",
+      "command": "type",
+      "target": "css=.card-back #senha",
+      "targets": [
+        ["css=.card-back #senha", "css:finder"],
+        ["xpath=(//input[@id='senha'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div[2]/input", "xpath:position"]
+      ],
+      "value": "lori123"
+    }, {
+      "id": "250e8091-e206-49cb-810e-426c008c8712",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-back .campo__login-kids:nth-child(1)",
+      "targets": [
+        ["css=.card-back .campo__login-kids:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='card']/div[2]/form/div", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95dc8cc5-573d-4779-ae41-ce7bccae259f",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0ce3f76-eb29-41c3-97b2-75d16f15088f",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/input", "xpath:position"]
+      ],
+      "value": "leonardocoropallo@gmail.com"
+    }, {
+      "id": "6e564294-4fd3-40ed-8bef-307466cacd75",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-back .form__btn",
+      "targets": [
+        ["css=.card-back .form__btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='card']/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2d7a6afb-ebde-41bf-be54-30a772de0e7a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://127.0.0.1:5500/", "http://127.0.0.1:5500/mateka/mateka/index.html"],
+  "plugins": []
+}
